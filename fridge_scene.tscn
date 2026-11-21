@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://bhv8ipv62wgnb"]
+
+[ext_resource type="Texture2D" uid="uid://wwlwcovea5fp" path="res://question-mark.png" id="1_atqil"]
+[ext_resource type="Texture2D" uid="uid://cihdsqgpaaljd" path="res://fridge_inside_view.png" id="1_icu4r"]
+[ext_resource type="Script" uid="uid://dhew1vji1a5ip" path="res://instructions_button.gd" id="1_ihb0l"]
+[ext_resource type="Texture2D" uid="uid://bl34s6b6tgq58" path="res://pocket_watch.png" id="4_pxo1p"]
+[ext_resource type="Texture2D" uid="uid://c7wp2qshp6bpe" path="res://igloo.png" id="5_pxo1p"]
+
+[node name="Node2D" type="Node2D" unique_id=1741712017]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1958531624]
+position = Vector2(591.00006, 330)
+scale = Vector2(1.9, 1.9)
+texture = ExtResource("1_icu4r")
+
+[node name="InstructionsButton" type="TextureButton" parent="." unique_id=1749439871]
+offset_left = 20.999998
+offset_top = 20.999998
+offset_right = 521.0
+offset_bottom = 521.0
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("1_atqil")
+script = ExtResource("1_ihb0l")
+
+[node name="InstructionsText" type="Sprite2D" parent="." unique_id=1406301776]
+visible = false
+position = Vector2(494, 305.00003)
+texture = ExtResource("4_pxo1p")
+
+[node name="ExitButton" type="TextureButton" parent="." unique_id=518953478]
+offset_left = 733.0
+offset_top = 226.0
+offset_right = 1235.0
+offset_bottom = 726.0
+texture_normal = ExtResource("5_pxo1p")
+
+[connection signal="pressed" from="InstructionsButton" to="InstructionsButton" method="_on_pressed"]
+[connection signal="pressed" from="ExitButton" to="InstructionsButton" method="_on_exit_button_pressed"]

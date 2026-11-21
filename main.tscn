@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://dn5d0yebr6irv"]
+
+[ext_resource type="Script" uid="uid://6vgjwpounkwo" path="res://player.gd" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://bk55nkiad5drl" path="res://background.png" id="1_7mycd"]
+[ext_resource type="Texture2D" uid="uid://61gd5mvscq0r" path="res://sprite_image.png" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://ciiclva2grd4o" path="res://safe_button.jpg" id="4_lquwl"]
+[ext_resource type="Texture2D" uid="uid://dbbq2pl6mmvf8" path="res://fridge_button.png" id="6_7mycd"]
+[ext_resource type="Texture2D" uid="uid://cmbwd7n6lvthg" path="res://desk_button.png" id="7_272bh"]
+
+[node name="Node2D" type="Node2D" unique_id=1070698194]
+position = Vector2(-336, -345)
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1370640036]
+position = Vector2(909, 548)
+scale = Vector2(2.3, 2.3)
+texture = ExtResource("1_7mycd")
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=1961675477]
+position = Vector2(604, 924)
+script = ExtResource("1_0xm2m")
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1676642768]
+position = Vector2(19, -60)
+zoom = Vector2(1.5, 1.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1750181244]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_h2yge")
+
+[node name="SafeButton" type="TextureButton" parent="." unique_id=1475867199]
+offset_left = 350.0
+offset_top = 734.0
+offset_right = 710.0
+offset_bottom = 1094.0
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("4_lquwl")
+
+[node name="DeskButton" type="TextureButton" parent="." unique_id=524061126]
+offset_left = 743.0
+offset_top = 451.0
+offset_right = 1833.0
+offset_bottom = 1286.0
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("7_272bh")
+
+[node name="FridgeButton" type="TextureButton" parent="." unique_id=776450863]
+offset_left = 1345.0
+offset_top = 568.0
+offset_right = 1591.0
+offset_bottom = 808.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("6_7mycd")
+
+[connection signal="pressed" from="SafeButton" to="Player" method="_on_safe_button_pressed"]
+[connection signal="pressed" from="DeskButton" to="Player" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="FridgeButton" to="Player" method="_on_fridge_button_pressed"]
