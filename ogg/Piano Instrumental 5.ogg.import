@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://djkhmaybldou3"
+path="res://.godot/imported/Piano Instrumental 5.ogg-9373673dab63f4a7cf97aa905b25f16c.oggvorbisstr"
+
+[deps]
+
+source_file="res://ogg/Piano Instrumental 5.ogg"
+dest_files=["res://.godot/imported/Piano Instrumental 5.ogg-9373673dab63f4a7cf97aa905b25f16c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
