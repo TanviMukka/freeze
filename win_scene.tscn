@@ -26,6 +26,7 @@ offset_left = 391.0
 offset_top = 511.0
 offset_right = 694.0
 offset_bottom = 592.0
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 0)
 script = ExtResource("2_akwf7")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

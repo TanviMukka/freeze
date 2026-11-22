@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://gnn2lplk5ff4"]
+[gd_scene format=4 uid="uid://gnn2lplk5ff4"]
 
 [ext_resource type="Script" uid="uid://d0vlnqrcoiiaq" path="res://keypad.gd" id="1_0deji"]
 [ext_resource type="Texture2D" uid="uid://c7wp2qshp6bpe" path="res://exit_button.png" id="5_16wui"]
@@ -17,6 +17,15 @@ data = PackedByteArray("d09GMgABAAAAALU4ABEAAAABjRQAALTXAAEAAAAAAAAAAAAAAAAAAAAA
 font_name = "Open Sans SemiBold"
 style_name = "SemiBold"
 font_weight = 600
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
 cache/0/16/0/ascent = 18.0
 cache/0/16/0/descent = 5.0
 cache/0/16/0/underline_position = 1.609375
@@ -926,11 +935,11 @@ Button/styles/hover = SubResource("StyleBoxFlat_m2ljc")
 Button/styles/normal = SubResource("StyleBoxFlat_gggld")
 Button/styles/pressed = SubResource("StyleBoxFlat_dn8hx")
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" unique_id=1644594739]
 position = Vector2(240, 185)
 script = ExtResource("1_0deji")
 
-[node name="ExitButton" type="TextureButton" parent="."]
+[node name="ExitButton" type="TextureButton" parent="." unique_id=268184170]
 offset_left = 133.99998
 offset_top = 171.99998
 offset_right = 634.0
@@ -938,11 +947,11 @@ offset_bottom = 672.0
 scale = Vector2(0.7, 0.7)
 texture_normal = ExtResource("5_16wui")
 
-[node name="DisplayLabel" type="Label" parent="."]
+[node name="DisplayLabel" type="Label" parent="." unique_id=474532200]
 offset_right = 40.0
 offset_bottom = 23.0
 
-[node name="GridContainer" type="GridContainer" parent="."]
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1334651714]
 offset_left = 173.0
 offset_top = -117.0
 offset_right = 451.0
@@ -952,73 +961,73 @@ theme_override_constants/h_separation = 4
 theme_override_constants/v_separation = 4
 columns = 3
 
-[node name="Button" type="Button" parent="GridContainer"]
+[node name="Button" type="Button" parent="GridContainer" unique_id=1714690793]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "1"
 
-[node name="Button2" type="Button" parent="GridContainer"]
+[node name="Button2" type="Button" parent="GridContainer" unique_id=587185425]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "2"
 
-[node name="Button3" type="Button" parent="GridContainer"]
+[node name="Button3" type="Button" parent="GridContainer" unique_id=1937591809]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "3"
 
-[node name="Button4" type="Button" parent="GridContainer"]
+[node name="Button4" type="Button" parent="GridContainer" unique_id=940600670]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "4"
 
-[node name="Button5" type="Button" parent="GridContainer"]
+[node name="Button5" type="Button" parent="GridContainer" unique_id=1653568861]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "5"
 
-[node name="Button6" type="Button" parent="GridContainer"]
+[node name="Button6" type="Button" parent="GridContainer" unique_id=99058188]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "6"
 
-[node name="Button7" type="Button" parent="GridContainer"]
+[node name="Button7" type="Button" parent="GridContainer" unique_id=396839971]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "7"
 
-[node name="Button8" type="Button" parent="GridContainer"]
+[node name="Button8" type="Button" parent="GridContainer" unique_id=337695159]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "8"
 
-[node name="Button9" type="Button" parent="GridContainer"]
+[node name="Button9" type="Button" parent="GridContainer" unique_id=1564935219]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "9"
 
-[node name="ButtonClear" type="Button" parent="GridContainer"]
+[node name="ButtonClear" type="Button" parent="GridContainer" unique_id=598593984]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "clear"
 
-[node name="Button0" type="Button" parent="GridContainer"]
+[node name="Button0" type="Button" parent="GridContainer" unique_id=913424556]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "0"
 
-[node name="ButtonEnter" type="Button" parent="GridContainer"]
+[node name="ButtonEnter" type="Button" parent="GridContainer" unique_id=807144981]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3

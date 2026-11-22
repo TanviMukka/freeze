@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var correct_code: String = "1234" # Secret code
+@export var correct_code: String = "2709" # Secret code
 @onready var display = $DisplayLabel
 
 var current_input: String = ""
