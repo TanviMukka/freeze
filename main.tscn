@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://fj0g7h8iv0gw" path="res://keypad.png" id="6_yaehf"]
 [ext_resource type="Texture2D" uid="uid://0whtge4ac2u7" path="res://bucket_button.png" id="7_5vw27"]
 [ext_resource type="Texture2D" uid="uid://r1gekqll23mf" path="res://image-removebg-preview (4)-1.png.png" id="7_074og"]
-[ext_resource type="Texture2D" uid="uid://cmbwd7n6lvthg" path="res://desk_button.png" id="7_272bh"]
+[ext_resource type="Texture2D" uid="uid://bk04a6fu173wt" path="res://desk_button-1.png.png" id="8_074og"]
 [ext_resource type="Script" path="res://book_1.gd" id="9_4c57u"]
 [ext_resource type="Script" path="res://book_2.gd" id="10_efxa6"]
 [ext_resource type="Script" path="res://book_3.gd" id="11_dg77c"]
@@ -219,7 +219,7 @@ offset_top = 645.0
 offset_right = 1640.0
 offset_bottom = 1385.0
 scale = Vector2(0.08, 0.08)
-texture_normal = ExtResource("7_272bh")
+texture_normal = ExtResource("8_074og")
 
 [node name="FridgeButton" type="TextureButton" parent="."]
 visible = false
