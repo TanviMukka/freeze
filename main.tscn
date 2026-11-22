@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://dn5d0yebr6irv"]
+[gd_scene load_steps=57 format=3 uid="uid://dn5d0yebr6irv"]
 
 [ext_resource type="Script" uid="uid://6vgjwpounkwo" path="res://player.gd" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://c0f81h0cxb0n3" path="res://timer.gd" id="1_5vw27"]
@@ -18,6 +18,8 @@
 [ext_resource type="Texture2D" uid="uid://ca81con1cn2b0" path="res://book_2.png" id="14_2cqfq"]
 [ext_resource type="Texture2D" uid="uid://cg0yscyicneyf" path="res://book_3.png" id="15_yaehf"]
 [ext_resource type="Texture2D" uid="uid://cgeovkyia6rw1" path="res://book_4.png" id="16_074og"]
+[ext_resource type="Texture2D" uid="uid://di2tow7ovox2d" path="res://lights.png" id="19_82xsv"]
+[ext_resource type="Texture2D" uid="uid://bgumobjadk0ob" path="res://pixel-art-christmas-wreath-icon-free-vector-removebg-preview.png" id="20_getpj"]
 
 [sub_resource type="GDScript" id="GDScript_w48qg"]
 
@@ -454,6 +456,59 @@ visible = false
 position = Vector2(1124, 477)
 scale = Vector2(0.05, 0.05)
 texture = ExtResource("16_074og")
+
+[node name="Lights" type="Sprite2D" parent="."]
+position = Vector2(901, 621)
+rotation = -0.078539826
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("19_82xsv")
+
+[node name="Lights2" type="Sprite2D" parent="."]
+position = Vector2(970, 622)
+rotation = -0.078539826
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("19_82xsv")
+
+[node name="Lights5" type="Sprite2D" parent="."]
+position = Vector2(737, 673)
+rotation = -0.078539826
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("19_82xsv")
+
+[node name="Lights6" type="Sprite2D" parent="."]
+position = Vector2(1113, 674)
+rotation = -0.078539826
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("19_82xsv")
+
+[node name="Lights4" type="Sprite2D" parent="."]
+position = Vector2(1041, 657)
+rotation = 0.75398225
+scale = Vector2(0.8, 0.8)
+skew = 0.13439035
+texture = ExtResource("19_82xsv")
+
+[node name="Lights3" type="Sprite2D" parent="."]
+position = Vector2(822, 647.99994)
+rotation = -0.7766715
+scale = Vector2(0.8, 0.8)
+skew = 0.25132743
+texture = ExtResource("19_82xsv")
+
+[node name="wreath1" type="Sprite2D" parent="."]
+position = Vector2(928, 626)
+scale = Vector2(0.078, 0.080000006)
+texture = ExtResource("20_getpj")
+
+[node name="wreath2" type="Sprite2D" parent="."]
+position = Vector2(742, 679)
+scale = Vector2(0.078, 0.080000006)
+texture = ExtResource("20_getpj")
+
+[node name="wreath3" type="Sprite2D" parent="."]
+position = Vector2(1117, 678)
+scale = Vector2(0.078, 0.080000006)
+texture = ExtResource("20_getpj")
 
 [connection signal="pressed" from="SafeButton" to="Player" method="_on_safe_button_pressed"]
 [connection signal="pressed" from="RiddleBook" to="Player" method="_on_riddle_book_pressed"]
