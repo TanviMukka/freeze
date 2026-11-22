@@ -26,5 +26,9 @@ func check_code():
 	if current_input == correct_code:
 		get_tree().change_scene_to_file("res://win_scene.tscn")
 	else:
-		display.text = "ERROR"
+		display.text = "Wrong Code"
 		current_input = ""
+
+
+func _on_exit_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://main.tscn")

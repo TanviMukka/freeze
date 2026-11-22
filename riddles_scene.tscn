@@ -13,10 +13,10 @@ position = Vector2(576, 326)
 texture = ExtResource("1_2pqiw")
 
 [node name="ExitButton" type="TextureButton" parent="." unique_id=612978988]
-offset_left = 408.00003
-offset_top = 348.0
-offset_right = 908.0
-offset_bottom = 848.0
+offset_left = 630.00006
+offset_top = 347.0
+offset_right = 1130.0
+offset_bottom = 847.0
 scale = Vector2(0.7, 0.7)
 texture_normal = ExtResource("2_dem7k")
 script = ExtResource("3_inur0")

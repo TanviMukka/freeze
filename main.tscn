@@ -3,16 +3,20 @@
 [ext_resource type="Script" uid="uid://6vgjwpounkwo" path="res://player.gd" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://c0f81h0cxb0n3" path="res://timer.gd" id="1_5vw27"]
 [ext_resource type="Texture2D" uid="uid://c07ehbv7pxfc0" path="res://background_3.jpg" id="1_272bh"]
+[ext_resource type="Texture2D" uid="uid://bht0e4rpusell" path="res://background_2.png" id="1_yaehf"]
 [ext_resource type="Texture2D" uid="uid://61gd5mvscq0r" path="res://sprite_image.png" id="2_h2yge"]
 [ext_resource type="Texture2D" uid="uid://ctbbegqdadrdk" path="res://Screenshot 2026-11-22 103056.png" id="5_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://dbbq2pl6mmvf8" path="res://fridge_button.png" id="6_7mycd"]
 [ext_resource type="Texture2D" uid="uid://0whtge4ac2u7" path="res://bucket_button.png" id="7_5vw27"]
 [ext_resource type="Texture2D" uid="uid://cmbwd7n6lvthg" path="res://desk_button.png" id="7_272bh"]
 [ext_resource type="Script" uid="uid://bl2m26faj3xyt" path="res://book_1.gd" id="9_4c57u"]
-[ext_resource type="Texture2D" uid="uid://bl34s6b6tgq58" path="res://pocket_watch.png" id="9_kek77"]
 [ext_resource type="Script" uid="uid://busdgn5taue22" path="res://book_2.gd" id="10_efxa6"]
 [ext_resource type="Script" uid="uid://brtt5n2w5swca" path="res://book_3.gd" id="11_dg77c"]
 [ext_resource type="Script" uid="uid://bykkk8t8jxxdw" path="res://book_4.gd" id="12_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://bj18an3cvyk5k" path="res://book_1.png" id="13_w48qg"]
+[ext_resource type="Texture2D" uid="uid://ca81con1cn2b0" path="res://book_2.png" id="14_2cqfq"]
+[ext_resource type="Texture2D" uid="uid://cg0yscyicneyf" path="res://book_3.png" id="15_yaehf"]
+[ext_resource type="Texture2D" uid="uid://cgeovkyia6rw1" path="res://book_4.png" id="16_074og"]
 
 [sub_resource type="GDScript" id="GDScript_w48qg"]
 
@@ -153,6 +157,11 @@ size = Vector2(45, 54)
 [node name="Node2D2" type="Node2D" unique_id=1966618064]
 position = Vector2(-336, -345)
 script = SubResource("GDScript_w48qg")
+
+[node name="Background2" type="Sprite2D" parent="." unique_id=1868931059]
+position = Vector2(916, 735.00006)
+scale = Vector2(1, 1.3556231)
+texture = ExtResource("1_yaehf")
 
 [node name="Timer" type="CanvasLayer" parent="." unique_id=130916473]
 script = ExtResource("1_5vw27")
@@ -432,27 +441,27 @@ script = ExtResource("12_ycdy4")
 
 [node name="Book1Number" type="Sprite2D" parent="." unique_id=1065681918]
 visible = false
-position = Vector2(772, 708)
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("9_kek77")
+position = Vector2(778, 712)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("13_w48qg")
 
 [node name="Book2Number" type="Sprite2D" parent="." unique_id=1926796569]
 visible = false
-position = Vector2(623, 1004)
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("9_kek77")
+position = Vector2(600, 950)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("14_2cqfq")
 
 [node name="Book3Number" type="Sprite2D" parent="." unique_id=1766217410]
 visible = false
-position = Vector2(1262.0001, 911.00006)
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("9_kek77")
+position = Vector2(1259, 952)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("15_yaehf")
 
 [node name="Book4Number" type="Sprite2D" parent="." unique_id=1418147682]
 visible = false
-position = Vector2(1165, 496)
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("9_kek77")
+position = Vector2(1124, 477)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("16_074og")
 
 [connection signal="pressed" from="SafeButton" to="Player" method="_on_safe_button_pressed"]
 [connection signal="pressed" from="RiddleBook" to="Player" method="_on_riddle_book_pressed"]

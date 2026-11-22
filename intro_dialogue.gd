@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-signal dialogue_finished #tells when to unfreeze the player's movement
+signal dialogue_finished
 
 @onready var name_label = $Panel/MarginContainer/VBoxContainer/NameLabel
 @onready var text_label = $Panel/MarginContainer/VBoxContainer/TextLabel

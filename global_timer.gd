@@ -46,6 +46,12 @@ func _on_timer_finished() -> void:
 	else:
 		push_warning("End screen scene not found: " + end_screen_scene)
 
+func reset_timer(auto_start: bool = true) -> void:
+	_finished = false
+	elapsed = start_seconds if countdown else 0.0
+	timer_active = auto_start
+	_push_label_text()
+
 func _push_label_text() -> void:
 	if display_label == null or not is_instance_valid(display_label):
 		return
