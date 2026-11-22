@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=4 uid="uid://gnn2lplk5ff4"]
+[gd_scene load_steps=12 format=4 uid="uid://gnn2lplk5ff4"]
 
 [ext_resource type="Script" uid="uid://d0vlnqrcoiiaq" path="res://keypad.gd" id="1_0deji"]
+[ext_resource type="Texture2D" uid="uid://cn0dtl4418oxg" path="res://Screenshot 2026-11-22 104701.png" id="3_tntfa"]
 [ext_resource type="Texture2D" uid="uid://c7wp2qshp6bpe" path="res://exit_button.png" id="5_16wui"]
 
 [sub_resource type="Image" id="Image_16wui"]
@@ -930,23 +931,22 @@ Button/styles/pressed = SubResource("StyleBoxFlat_dn8hx")
 position = Vector2(240, 185)
 script = ExtResource("1_0deji")
 
-[node name="ExitButton" type="TextureButton" parent="."]
-offset_left = 133.99998
-offset_top = 171.99998
-offset_right = 634.0
-offset_bottom = 672.0
-scale = Vector2(0.7, 0.7)
-texture_normal = ExtResource("5_16wui")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(475, 68)
+scale = Vector2(23, 23)
+texture = ExtResource("3_tntfa")
 
 [node name="DisplayLabel" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 285.0
+offset_top = -137.0
+offset_right = 325.0
+offset_bottom = -114.0
 
 [node name="GridContainer" type="GridContainer" parent="."]
-offset_left = 173.0
-offset_top = -117.0
-offset_right = 451.0
-offset_bottom = 283.0
+offset_left = 171.0
+offset_top = -85.0
+offset_right = 449.0
+offset_bottom = 315.0
 theme = SubResource("Theme_cjcnl")
 theme_override_constants/h_separation = 4
 theme_override_constants/v_separation = 4
@@ -1023,3 +1023,16 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Enter"
+
+[node name="ExitButton" type="TextureButton" parent="."]
+anchors_preset = -1
+offset_left = 549.0
+offset_top = 124.0
+offset_right = 1049.0
+offset_bottom = 482.0
+scale = Vector2(0.5, 0.5)
+size_flags_horizontal = 0
+size_flags_vertical = 0
+size_flags_stretch_ratio = 9.3
+texture_normal = ExtResource("5_16wui")
+ignore_texture_size = true
