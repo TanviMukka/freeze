@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://6vgjwpounkwo" path="res://player.gd" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://c0f81h0cxb0n3" path="res://timer.gd" id="1_5vw27"]
 [ext_resource type="Texture2D" uid="uid://c07ehbv7pxfc0" path="res://background_3.jpg" id="1_272bh"]
-[ext_resource type="Texture2D" uid="uid://61gd5mvscq0r" path="res://sprite_image.png" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://jki80k23bgbj" path="res://sprite.png" id="4_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://ctbbegqdadrdk" path="res://Screenshot 2026-11-22 103056.png" id="5_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://dbbq2pl6mmvf8" path="res://fridge_button.png" id="6_7mycd"]
 [ext_resource type="Texture2D" uid="uid://0whtge4ac2u7" path="res://bucket_button.png" id="7_5vw27"]
@@ -179,8 +179,8 @@ zoom = Vector2(2.5, 2.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
 position = Vector2(44, 60)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_h2yge")
+scale = Vector2(2, 2)
+texture = ExtResource("4_ycdy4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 visible = false

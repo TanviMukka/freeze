@@ -932,7 +932,7 @@ position = Vector2(240, 185)
 script = ExtResource("1_0deji")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(475, 68)
+position = Vector2(447, 96)
 scale = Vector2(23, 23)
 texture = ExtResource("3_tntfa")
 
