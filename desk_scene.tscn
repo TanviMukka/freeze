@@ -26,15 +26,16 @@ script = ExtResource("3_5vbif")
 
 [node name="InstructionsText" type="Sprite2D" parent="." unique_id=348144701]
 visible = false
-position = Vector2(598, 251)
-scale = Vector2(1.5, 1.5)
+position = Vector2(606, 295)
+scale = Vector2(1.2, 1.2)
 texture = ExtResource("4_qshme")
 
 [node name="ExitButton" type="TextureButton" parent="." unique_id=1247398086]
-offset_left = 705.0
-offset_top = 306.0
-offset_right = 1207.0
-offset_bottom = 806.0
+offset_left = 779.0
+offset_top = 367.0
+offset_right = 1281.0
+offset_bottom = 867.0
+scale = Vector2(0.8, 0.8)
 texture_normal = ExtResource("5_b6eqt")
 
 [connection signal="pressed" from="InstructionsButton" to="InstructionsButton" method="_on_pressed"]

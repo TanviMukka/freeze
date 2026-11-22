@@ -1,8 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dhxd0rjuqjgy6"]
+[gd_scene format=3 uid="uid://dhxd0rjuqjgy6"]
 
 [ext_resource type="Texture2D" uid="uid://p23xm35407g6" path="res://win_screen.png" id="1_k8wnm"]
+[ext_resource type="Script" uid="uid://j7yri25aqbmu" path="res://button3.gd" id="2_akwf7"]
 
-[node name="Control" type="Control"]
+[node name="Control" type="Control" unique_id=1660735981]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,7 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1151354527]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -18,3 +19,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_k8wnm")
+
+[node name="Button" type="Button" parent="." unique_id=1567781674]
+layout_mode = 0
+offset_left = 391.0
+offset_top = 511.0
+offset_right = 694.0
+offset_bottom = 592.0
+script = ExtResource("2_akwf7")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
