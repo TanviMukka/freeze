@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://df34tw4kqxd1s"]
+
+[ext_resource type="Texture2D" uid="uid://0whtge4ac2u7" path="res://bucket_button.png" id="1_k025v"]
+[ext_resource type="Texture2D" uid="uid://wwlwcovea5fp" path="res://question-mark.png" id="2_40yhg"]
+[ext_resource type="Script" uid="uid://dhew1vji1a5ip" path="res://instructions_button.gd" id="3_s737t"]
+[ext_resource type="Texture2D" uid="uid://bl34s6b6tgq58" path="res://pocket_watch.png" id="4_e85w0"]
+[ext_resource type="Texture2D" uid="uid://c7wp2qshp6bpe" path="res://exit_button.png" id="4_s737t"]
+
+[node name="Node2D" type="Node2D" unique_id=29137393]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1305485727]
+position = Vector2(559.00006, 589)
+scale = Vector2(9, 9)
+texture = ExtResource("1_k025v")
+
+[node name="InstructionsButton" type="TextureButton" parent="." unique_id=1331756958]
+offset_left = 22.0
+offset_top = 28.0
+offset_right = 62.0
+offset_bottom = 68.0
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("2_40yhg")
+script = ExtResource("3_s737t")
+
+[node name="InstructionsText" type="Sprite2D" parent="." unique_id=838030929]
+visible = false
+position = Vector2(555, 306)
+texture = ExtResource("4_e85w0")
+
+[node name="ExitButton" type="TextureButton" parent="." unique_id=578759939]
+offset_left = 712.0
+offset_top = 231.0
+offset_right = 1214.0
+offset_bottom = 728.0
+texture_normal = ExtResource("4_s737t")
+
+[connection signal="pressed" from="InstructionsButton" to="InstructionsButton" method="_on_pressed"]
+[connection signal="pressed" from="ExitButton" to="InstructionsButton" method="_on_exit_button_pressed"]

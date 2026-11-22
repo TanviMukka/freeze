@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7wp2qshp6bpe"
-path="res://.godot/imported/igloo.png-cd559ad37b7eb32617014f71dec057eb.ctex"
+uid="uid://c07ehbv7pxfc0"
+path="res://.godot/imported/background_3.jpg-ce6fda736bfdc6777613d4d8b8c97cba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://igloo.png"
-dest_files=["res://.godot/imported/igloo.png-cd559ad37b7eb32617014f71dec057eb.ctex"]
+source_file="res://background_3.jpg"
+dest_files=["res://.godot/imported/background_3.jpg-ce6fda736bfdc6777613d4d8b8c97cba.ctex"]
 
 [params]
 

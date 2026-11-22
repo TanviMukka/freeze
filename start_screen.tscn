@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c1ru50urq1equ"]
+
+[ext_resource type="Texture2D" uid="uid://dayvgvlwsd8do" path="res://start_screen.png" id="1_ncxyx"]
+[ext_resource type="Script" uid="uid://nsffav1puogm" path="res://button.gd" id="1_pevhg"]
+
+[node name="Node2D" type="Node2D" unique_id=1159500135]
+
+[node name="Button" type="Button" parent="." unique_id=1900595141]
+offset_left = 378.0
+offset_top = 498.0
+offset_right = 690.0
+offset_bottom = 576.0
+script = ExtResource("1_pevhg")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1019750797]
+position = Vector2(573, 325)
+texture = ExtResource("1_ncxyx")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

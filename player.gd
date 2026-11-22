@@ -4,7 +4,7 @@ var watch_count = 0
 
 func _physics_process(delta):
 	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	velocity = input_direction * 400
+	velocity = input_direction * 200
 	move_and_slide()
 
 
@@ -29,3 +29,11 @@ func _on_safe_button_pressed() -> void:
 
 func _on_fridge_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://fridge_scene.tscn")
+
+
+func _on_bucket_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://bucket_scene.tscn")
+
+
+func _on_riddle_book_pressed() -> void:
+	get_tree().change_scene_to_file("res://riddles_scene.tscn")
