@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://uyu47ti3df56" path="res://exit_button.gd" id="3_inur0"]
 [ext_resource type="Texture2D" uid="uid://wwlwcovea5fp" path="res://question-mark.png" id="4_couqm"]
 [ext_resource type="Texture2D" uid="uid://cmvtks4l7bhh2" path="res://instructions_riddle.png" id="5_0qcc8"]
+[ext_resource type="PackedScene" uid="uid://ohkd2oosw5mm" path="res://blue_overlay.tscn" id="6_y8nyp"]
 
 [node name="Node2D" type="Node2D" unique_id=1143641084]
 
@@ -33,6 +34,8 @@ texture_normal = ExtResource("4_couqm")
 visible = false
 position = Vector2(580, 270)
 texture = ExtResource("5_0qcc8")
+
+[node name="BlueOverlay" parent="." unique_id=141984219 instance=ExtResource("6_y8nyp")]
 
 [connection signal="pressed" from="ExitButton" to="ExitButton" method="_on_pressed"]
 [connection signal="pressed" from="InstructionsButton" to="ExitButton" method="_on_instructions_button_pressed"]

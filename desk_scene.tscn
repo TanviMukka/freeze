@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cudl2mmt1r5td" path="res://instructions_desk.png" id="4_qshme"]
 [ext_resource type="Texture2D" uid="uid://c7wp2qshp6bpe" path="res://exit_button.png" id="5_b6eqt"]
 [ext_resource type="Texture2D" uid="uid://bl34s6b6tgq58" path="res://pocket_watch.png" id="6_bsija"]
+[ext_resource type="PackedScene" uid="uid://ohkd2oosw5mm" path="res://blue_overlay.tscn" id="7_5vbif"]
 
 [node name="Node2D" type="Node2D" unique_id=46261442]
 position = Vector2(-16, 14)
@@ -42,6 +43,8 @@ offset_right = 1281.0
 offset_bottom = 867.0
 scale = Vector2(0.8, 0.8)
 texture_normal = ExtResource("5_b6eqt")
+
+[node name="BlueOverlay" parent="." unique_id=141984219 instance=ExtResource("7_5vbif")]
 
 [connection signal="pressed" from="InstructionsButton" to="InstructionsButton" method="_on_pressed"]
 [connection signal="pressed" from="ExitButton" to="InstructionsButton" method="_on_exit_button_pressed"]
