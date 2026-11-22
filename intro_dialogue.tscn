@@ -1,15 +1,22 @@
-[gd_scene format=3 uid="uid://cbae7f27scai8"]
+[gd_scene load_steps=3 format=3 uid="uid://cbae7f27scai8"]
 
 [ext_resource type="Script" uid="uid://dxvupag41tmxn" path="res://intro_dialogue.gd" id="1_k230n"]
+[ext_resource type="Texture2D" uid="uid://dqra3qw2j7br6" path="res://pixel_art_large.png" id="2_3l2va"]
 
-[node name="CanvasLayer" type="CanvasLayer" unique_id=104346227]
+[node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_k230n")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=127026585]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="TextureRect" type="TextureRect" parent="."]
+unique_name_in_owner = true
+offset_left = 30.0
+offset_top = 51.0
+offset_right = 464.0
+offset_bottom = 658.0
+texture = ExtResource("2_3l2va")
+expand_mode = 1
+stretch_mode = 6
 
-[node name="Panel" type="Panel" parent="." unique_id=1041705741]
+[node name="Panel" type="Panel" parent="."]
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
@@ -19,7 +26,7 @@ grow_horizontal = 2
 grow_vertical = 0
 metadata/_edit_group_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="Panel" unique_id=810211576]
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
 layout_mode = 0
 offset_right = 1148.0
 offset_bottom = 198.0
@@ -28,12 +35,14 @@ theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer" unique_id=1159721735]
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
 layout_mode = 2
 
-[node name="NameLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer" unique_id=1691782189]
+[node name="NameLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 
-[node name="TextLabel" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer" unique_id=921349970]
+[node name="TextLabel" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
