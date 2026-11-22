@@ -13,7 +13,6 @@ var dialogue_lines = [
 
 var current_index = 0
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	show_line()
 
@@ -22,6 +21,7 @@ func show_line():
 		name_label.text = dialogue_lines[current_index]["name"]
 		text_label.text = dialogue_lines[current_index]["text"]
 	else:
+		GlobalTimer.start_timer()
 		dialogue_finished.emit()
 		queue_free()
 
@@ -31,7 +31,5 @@ func _input(event):
 		show_line()
 		get_viewport().set_input_as_handled()
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
