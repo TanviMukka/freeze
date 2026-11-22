@@ -1,9 +1,6 @@
-[gd_scene load_steps=14 format=4 uid="uid://gnn2lplk5ff4"]
+[gd_scene load_steps=11 format=4 uid="uid://gnn2lplk5ff4"]
 
 [ext_resource type="Script" uid="uid://d0vlnqrcoiiaq" path="res://keypad.gd" id="1_0deji"]
-[ext_resource type="Texture2D" uid="uid://wwlwcovea5fp" path="res://question-mark.png" id="2_8jljl"]
-[ext_resource type="Script" uid="uid://dhew1vji1a5ip" path="res://instructions_button.gd" id="3_41bwk"]
-[ext_resource type="Texture2D" uid="uid://bl34s6b6tgq58" path="res://pocket_watch.png" id="3_tntfa"]
 [ext_resource type="Texture2D" uid="uid://c7wp2qshp6bpe" path="res://exit_button.png" id="5_16wui"]
 
 [sub_resource type="Image" id="Image_16wui"]
@@ -903,6 +900,7 @@ corner_radius_bottom_left = 3
 corner_detail = 5
 
 [sub_resource type="Theme" id="Theme_cjcnl"]
+default_base_scale = 0.02
 Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
 Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
 Button/colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
@@ -932,25 +930,12 @@ Button/styles/pressed = SubResource("StyleBoxFlat_dn8hx")
 position = Vector2(240, 185)
 script = ExtResource("1_0deji")
 
-[node name="InstructionsButton" type="TextureButton" parent="."]
-offset_left = -81.00001
-offset_top = -151.00002
-offset_right = 419.0
-offset_bottom = 349.0
-scale = Vector2(0.2, 0.2)
-texture_normal = ExtResource("2_8jljl")
-script = ExtResource("3_41bwk")
-
-[node name="InstructionsText" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(598, 309)
-texture = ExtResource("3_tntfa")
-
 [node name="ExitButton" type="TextureButton" parent="."]
-offset_left = -93.0
-offset_top = 199.0
-offset_right = 407.0
-offset_bottom = 699.0
+offset_left = 133.99998
+offset_top = 171.99998
+offset_right = 634.0
+offset_bottom = 672.0
+scale = Vector2(0.7, 0.7)
 texture_normal = ExtResource("5_16wui")
 
 [node name="DisplayLabel" type="Label" parent="."]
@@ -958,10 +943,10 @@ offset_right = 40.0
 offset_bottom = 23.0
 
 [node name="GridContainer" type="GridContainer" parent="."]
-offset_left = -18.0
-offset_top = -110.0
-offset_right = 327.0
-offset_bottom = 374.0
+offset_left = 173.0
+offset_top = -117.0
+offset_right = 451.0
+offset_bottom = 283.0
 theme = SubResource("Theme_cjcnl")
 theme_override_constants/h_separation = 4
 theme_override_constants/v_separation = 4
@@ -1038,6 +1023,3 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Enter"
-
-[connection signal="pressed" from="InstructionsButton" to="InstructionsButton" method="_on_pressed"]
-[connection signal="pressed" from="ExitButton" to="InstructionsButton" method="_on_exit_button_pressed"]
