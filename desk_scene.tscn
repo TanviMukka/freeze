@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://ckbcfkeolvmj" path="res://texture_button.gd" id="3_5vbif"]
 [ext_resource type="Texture2D" uid="uid://cudl2mmt1r5td" path="res://instructions_desk.png" id="4_qshme"]
 [ext_resource type="Texture2D" uid="uid://c7wp2qshp6bpe" path="res://exit_button.png" id="5_b6eqt"]
+[ext_resource type="Texture2D" uid="uid://bl34s6b6tgq58" path="res://pocket_watch.png" id="6_bsija"]
 
 [node name="Node2D" type="Node2D" unique_id=46261442]
 position = Vector2(-16, 14)
@@ -14,6 +15,10 @@ texture_filter = 4
 position = Vector2(597, 371)
 scale = Vector2(0.725, 0.725)
 texture = ExtResource("1_qshme")
+
+[node name="WatchIndent" type="Sprite2D" parent="." unique_id=718045755]
+position = Vector2(620, 308)
+texture = ExtResource("6_bsija")
 
 [node name="InstructionsButton" type="TextureButton" parent="." unique_id=1001326367]
 offset_left = -4.9999924
