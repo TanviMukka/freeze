@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://dn5d0yebr6irv"]
+[gd_scene format=3 uid="uid://dn5d0yebr6irv"]
 
 [ext_resource type="Script" uid="uid://6vgjwpounkwo" path="res://player.gd" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://c0f81h0cxb0n3" path="res://timer.gd" id="1_5vw27"]
@@ -31,30 +31,6 @@ corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
-
-[sub_resource type="FontFile" id="FontFile_kek77"]
-subpixel_positioning = 0
-msdf_pixel_range = 14
-msdf_size = 128
-cache/0/variation_coordinates = {}
-cache/0/face_index = 0
-cache/0/embolden = 0.0
-cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
-cache/0/spacing_top = 0
-cache/0/spacing_bottom = 0
-cache/0/spacing_space = 0
-cache/0/spacing_glyph = 0
-cache/0/baseline_offset = 0.0
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/32/0/ascent = 0.0
-cache/0/32/0/descent = 0.0
-cache/0/32/0/underline_position = 0.0
-cache/0/32/0/underline_thickness = 0.0
-cache/0/32/0/scale = 1.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_imckf"]
 size = Vector2(50, 70)
@@ -180,7 +156,6 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_5vw27")
 
 [node name="TimerLabel" type="Label" parent="Timer/TimerPanel" unique_id=1184130250]
 layout_mode = 2
-theme_override_fonts/font = SubResource("FontFile_kek77")
 theme_override_font_sizes/font_size = 32
 
 [node name="Background" type="Sprite2D" parent="." unique_id=1584643001]
@@ -207,9 +182,9 @@ position = Vector2(45, 61)
 shape = SubResource("RectangleShape2D_imckf")
 
 [node name="SafeButton" type="TextureButton" parent="." unique_id=2083375682]
-offset_left = 741.0
+offset_left = 744.0
 offset_top = 475.0
-offset_right = 871.0
+offset_right = 874.0
 offset_bottom = 667.0
 scale = Vector2(0.24, 0.24)
 texture_normal = ExtResource("6_yaehf")
