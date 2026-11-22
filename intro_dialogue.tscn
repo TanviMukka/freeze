@@ -8,10 +8,10 @@ script = ExtResource("1_k230n")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 unique_name_in_owner = true
-offset_left = 30.0
-offset_top = 51.0
-offset_right = 464.0
-offset_bottom = 658.0
+offset_left = 45.0
+offset_top = 44.0
+offset_right = 461.0
+offset_bottom = 651.0
 texture = ExtResource("2_3l2va")
 expand_mode = 1
 stretch_mode = 6
@@ -21,7 +21,8 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -203.0
+offset_top = -242.0
+offset_bottom = -39.0
 grow_horizontal = 2
 grow_vertical = 0
 metadata/_edit_group_ = true
