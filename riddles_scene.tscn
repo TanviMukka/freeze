@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dusxo8hllvo7d" path="res://riddles_book.png" id="1_2pqiw"]
 [ext_resource type="Texture2D" uid="uid://c7wp2qshp6bpe" path="res://exit_button.png" id="2_dem7k"]
 [ext_resource type="Script" uid="uid://uyu47ti3df56" path="res://exit_button.gd" id="3_inur0"]
+[ext_resource type="Texture2D" uid="uid://wwlwcovea5fp" path="res://question-mark.png" id="4_couqm"]
 
 [node name="Node2D" type="Node2D" unique_id=1143641084]
 
@@ -18,5 +19,13 @@ offset_bottom = 848.0
 scale = Vector2(0.7, 0.7)
 texture_normal = ExtResource("2_dem7k")
 script = ExtResource("3_inur0")
+
+[node name="InstructionsButton" type="TextureButton" parent="." unique_id=910696551]
+offset_left = -16.0
+offset_top = -18.0
+offset_right = 284.0
+offset_bottom = 282.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("4_couqm")
 
 [connection signal="pressed" from="ExitButton" to="ExitButton" method="_on_pressed"]
