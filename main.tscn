@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-[gd_scene load_steps=59 format=3 uid="uid://dn5d0yebr6irv"]
-=======
 [gd_scene format=3 uid="uid://dn5d0yebr6irv"]
->>>>>>> 3938c578b223e36b9419e4a982b1b40f9960c5f2
 
 [ext_resource type="Script" uid="uid://6vgjwpounkwo" path="res://player.gd" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://c0f81h0cxb0n3" path="res://timer.gd" id="1_5vw27"]
@@ -24,12 +20,9 @@
 [ext_resource type="Texture2D" uid="uid://cgeovkyia6rw1" path="res://book_4.png" id="16_074og"]
 [ext_resource type="Texture2D" uid="uid://di2tow7ovox2d" path="res://lights.png" id="19_82xsv"]
 [ext_resource type="Texture2D" uid="uid://bgumobjadk0ob" path="res://pixel-art-christmas-wreath-icon-free-vector-removebg-preview.png" id="20_getpj"]
-<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://qqo8xwk5dojp" path="res://1000_F_445079242_Dcge9Q5ipLldOY9DFMhXa3lmft87TSrJ-removebg-preview.png" id="21_getpj"]
 [ext_resource type="AudioStream" uid="uid://d1xsjf5f1m8vo" path="res://ogg/Piano Instrumental 2.ogg" id="22_ryguw"]
-=======
-[ext_resource type="PackedScene" uid="uid://ohkd2oosw5mm" path="res://blue_overlay.tscn" id="21_getpj"]
->>>>>>> 3938c578b223e36b9419e4a982b1b40f9960c5f2
+[ext_resource type="PackedScene" uid="uid://ohkd2oosw5mm" path="res://blue_overlay.tscn" id="23_overlay"]
 
 [sub_resource type="GDScript" id="GDScript_w48qg"]
 
@@ -44,24 +37,6 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-<<<<<<< HEAD
-[sub_resource type="FontFile" id="FontFile_kek77"]
-subpixel_positioning = 0
-msdf_pixel_range = 14
-msdf_size = 128
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/32/0/ascent = 0.0
-cache/0/32/0/descent = 0.0
-cache/0/32/0/underline_position = 0.0
-cache/0/32/0/underline_thickness = 0.0
-cache/0/32/0/scale = 1.0
-
-=======
->>>>>>> 3938c578b223e36b9419e4a982b1b40f9960c5f2
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_imckf"]
 size = Vector2(50, 70)
 
@@ -216,15 +191,10 @@ visible = false
 position = Vector2(45, 61)
 shape = SubResource("RectangleShape2D_imckf")
 
-<<<<<<< HEAD
 [node name="GPUParticles2D" type="GPUParticles2D" parent="Player"]
 
-[node name="SafeButton" type="TextureButton" parent="."]
-offset_left = 741.0
-=======
 [node name="SafeButton" type="TextureButton" parent="." unique_id=2083375682]
 offset_left = 744.0
->>>>>>> 3938c578b223e36b9419e4a982b1b40f9960c5f2
 offset_top = 475.0
 offset_right = 874.0
 offset_bottom = 667.0
@@ -534,7 +504,6 @@ position = Vector2(1117, 678)
 scale = Vector2(0.078, 0.080000006)
 texture = ExtResource("20_getpj")
 
-<<<<<<< HEAD
 [node name="1000F445079242Dcge9q5IpLldOy9dfMhXa3Lmft87tSrJRemovebgPreview2" type="Sprite2D" parent="."]
 position = Vector2(673, 456)
 scale = Vector2(0.034705926, 0.063849956)
@@ -599,9 +568,8 @@ texture = ExtResource("21_getpj")
 stream = ExtResource("22_ryguw")
 volume_db = -15.053
 autoplay = true
-=======
-[node name="BlueOverlay" parent="." unique_id=141984219 instance=ExtResource("21_getpj")]
->>>>>>> 3938c578b223e36b9419e4a982b1b40f9960c5f2
+
+[node name="BlueOverlay" parent="." unique_id=141984219 instance=ExtResource("23_overlay")]
 
 [connection signal="pressed" from="SafeButton" to="Player" method="_on_safe_button_pressed"]
 [connection signal="pressed" from="RiddleBook" to="Player" method="_on_riddle_book_pressed"]
