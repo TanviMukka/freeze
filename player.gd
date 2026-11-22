@@ -1,6 +1,21 @@
 extends CharacterBody2D
 
 var watch_count = 0
+var dialogue_scene = preload("res://intro_dialogue.tscn")
+
+func _ready():
+	# 1. Freeze this player's movement
+	set_physics_process(false)
+	
+	# 2. Spawn the intro dialogue
+	var dialogue = dialogue_scene.instantiate()
+	add_child(dialogue)
+	
+	# 3. Unfreeze when the dialogue ends
+	dialogue.dialogue_finished.connect(_on_dialogue_finished)
+
+func _on_dialogue_finished():
+	set_physics_process(true)
 
 func _physics_process(delta):
 	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
