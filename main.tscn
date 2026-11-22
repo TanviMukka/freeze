@@ -8,6 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://dbbq2pl6mmvf8" path="res://fridge_button.png" id="6_7mycd"]
 [ext_resource type="Texture2D" uid="uid://0whtge4ac2u7" path="res://bucket_button.png" id="7_5vw27"]
 [ext_resource type="Texture2D" uid="uid://cmbwd7n6lvthg" path="res://desk_button.png" id="7_272bh"]
+[ext_resource type="Script" uid="uid://bl2m26faj3xyt" path="res://book_1.gd" id="9_4c57u"]
+[ext_resource type="Texture2D" uid="uid://bl34s6b6tgq58" path="res://pocket_watch.png" id="9_kek77"]
+[ext_resource type="Script" uid="uid://busdgn5taue22" path="res://book_2.gd" id="10_efxa6"]
+[ext_resource type="Script" uid="uid://brtt5n2w5swca" path="res://book_3.gd" id="11_dg77c"]
+[ext_resource type="Script" uid="uid://bykkk8t8jxxdw" path="res://book_4.gd" id="12_ycdy4"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vw27"]
 content_margin_left = 16.0
@@ -145,6 +150,7 @@ position = Vector2(-336, -345)
 
 [node name="Timer" type="CanvasLayer" parent="." unique_id=1423199407]
 script = ExtResource("1_5vw27")
+start_seconds = 120.0
 
 [node name="TimerPanel" type="PanelContainer" parent="Timer" unique_id=641090407]
 anchors_preset = 1
@@ -388,8 +394,68 @@ shape = SubResource("RectangleShape2D_xxohg")
 position = Vector2(934, 153)
 shape = SubResource("RectangleShape2D_fbw3r")
 
+[node name="Book1" type="Button" parent="." unique_id=1418987490]
+self_modulate = Color(0.95686275, 0.95686275, 0.95686275, 0)
+offset_left = 774.0
+offset_top = 733.0
+offset_right = 782.0
+offset_bottom = 750.0
+script = ExtResource("9_4c57u")
+
+[node name="Book2" type="Button" parent="." unique_id=341018702]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 637.0
+offset_top = 974.0
+offset_right = 645.0
+offset_bottom = 1000.0
+script = ExtResource("10_efxa6")
+
+[node name="Book3" type="Button" parent="." unique_id=735404555]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 1247.0
+offset_top = 885.0
+offset_right = 1271.0
+offset_bottom = 903.0
+script = ExtResource("11_dg77c")
+
+[node name="Book4" type="Button" parent="." unique_id=352022673]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 1115.0
+offset_top = 501.0
+offset_right = 1123.0
+offset_bottom = 518.0
+script = ExtResource("12_ycdy4")
+
+[node name="Book1Number" type="Sprite2D" parent="." unique_id=276944685]
+visible = false
+position = Vector2(772, 708)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_kek77")
+
+[node name="Book2Number" type="Sprite2D" parent="." unique_id=939926578]
+visible = false
+position = Vector2(623, 1004)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_kek77")
+
+[node name="Book3Number" type="Sprite2D" parent="." unique_id=1140870619]
+visible = false
+position = Vector2(1262.0001, 911.00006)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_kek77")
+
+[node name="Book4Number" type="Sprite2D" parent="." unique_id=1920027716]
+visible = false
+position = Vector2(1165, 496)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_kek77")
+
 [connection signal="pressed" from="SafeButton" to="Player" method="_on_safe_button_pressed"]
 [connection signal="pressed" from="RiddleBook" to="Player" method="_on_riddle_book_pressed"]
 [connection signal="pressed" from="DeskButton" to="Player" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="FridgeButton" to="Player" method="_on_fridge_button_pressed"]
 [connection signal="pressed" from="BucketButton" to="Player" method="_on_bucket_button_pressed"]
+[connection signal="pressed" from="Book1" to="Book1" method="_on_pressed"]
+[connection signal="pressed" from="Book2" to="Book2" method="_on_pressed"]
+[connection signal="pressed" from="Book3" to="Book3" method="_on_pressed"]
+[connection signal="pressed" from="Book4" to="Book4" method="_on_pressed"]

@@ -7,9 +7,9 @@
 
 [node name="Button" type="Button" parent="." unique_id=1900595141]
 offset_left = 378.0
-offset_top = 498.0
+offset_top = 512.0
 offset_right = 690.0
-offset_bottom = 576.0
+offset_bottom = 602.0
 script = ExtResource("1_pevhg")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=1019750797]
