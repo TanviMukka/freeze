@@ -14,9 +14,20 @@ var character_portraits = {
 }
 
 var dialogue_lines = [
-	{"name": "Pingu", "text": "oh my god! why has time frozen for me!? is this because i broke the pocket watch? what do i do T-T"},
-	{"name": "Magic Book", "text": "You silly penguin. Although your clumsiness broke the watch, you can still fix it...IF you obtain the required parts. Those parts are in a locked room and can only be unlocked by a code. The clues to that code are hidden all around the library."},
-	{"name": "Pingu", "text": "wow...i never expected this to happen. i guess i better get started 0_0"}
+	{"name": "Pingu", "text": "oh my god! why has time frozen for me!? is this because i broke the pocket watch? what do i do T-T
+
+
+
+[Press SPACE to continue]"},
+	{"name": "Magic Book", "text": "You silly penguin. Although your clumsiness broke the watch, you can still fix it...IF you obtain the required parts. Those parts are in a locked room and can only be unlocked by a code. The clues to that code are hidden all around the library.
+
+
+[Press SPACE to continue]"},
+	{"name": "Pingu", "text": "wow...i never expected this to happen. i guess i better get started 0_0
+
+
+
+[Press SPACE to continue]"}
 ]
 
 var current_index = 0

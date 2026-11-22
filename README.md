@@ -5,7 +5,8 @@ To get time to be back to normal, Pingu has to find some parts to fix it in, iro
 Live Demo: [View Live Project]()
 Built By: Tanvi, Niharika
 
-![A screenshot of the starting screen of Time Freeze](res://start_screen.png)
+![A screenshot of the starting screen of Time Freeze]<img width="908" height="503" alt="image" src="https://github.com/user-attachments/assets/4900d684-72b9-4c30-8da4-e244b5803403" />
+
 
 ### How to Play
 - Read the dialogue which comes at the start of the game to understand the context.

@@ -1251,9 +1251,9 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 
 [node name="ExitButton" type="TextureButton" parent="." unique_id=268184170]
-offset_left = 133.99998
-offset_top = 225.99998
-offset_right = 634.0
+offset_left = 138.99998
+offset_top = 225.99997
+offset_right = 639.0
 offset_bottom = 726.0
 scale = Vector2(0.7, 0.7)
 texture_normal = ExtResource("5_16wui")

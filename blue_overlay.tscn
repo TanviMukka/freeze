@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://ohkd2oosw5mm"]
+
+[sub_resource type="Gradient" id="Gradient_kdxfh"]
+offsets = PackedFloat32Array(0.45, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0.8745098, 0.9529412, 1, 0.37254903)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hmxci"]
+gradient = SubResource("Gradient_kdxfh")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[node name="BlueOverlay" type="CanvasLayer" unique_id=141984219]
+layer = 5
+
+[node name="Tint" type="ColorRect" parent="." unique_id=279011372]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.6666667, 1, 1, 0.19607843)
+
+[node name="Frost" type="TextureRect" parent="." unique_id=1768202009]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("GradientTexture2D_hmxci")
