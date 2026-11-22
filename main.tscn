@@ -1,12 +1,45 @@
 [gd_scene format=3 uid="uid://dn5d0yebr6irv"]
 
 [ext_resource type="Script" uid="uid://6vgjwpounkwo" path="res://player.gd" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://c0f81h0cxb0n3" path="res://timer.gd" id="1_5vw27"]
 [ext_resource type="Texture2D" uid="uid://c07ehbv7pxfc0" path="res://background_3.jpg" id="1_272bh"]
 [ext_resource type="Texture2D" uid="uid://61gd5mvscq0r" path="res://sprite_image.png" id="2_h2yge"]
 [ext_resource type="Texture2D" uid="uid://ciiclva2grd4o" path="res://safe_button.jpg" id="4_lquwl"]
 [ext_resource type="Texture2D" uid="uid://dbbq2pl6mmvf8" path="res://fridge_button.png" id="6_7mycd"]
 [ext_resource type="Texture2D" uid="uid://0whtge4ac2u7" path="res://bucket_button.png" id="7_5vw27"]
 [ext_resource type="Texture2D" uid="uid://cmbwd7n6lvthg" path="res://desk_button.png" id="7_272bh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vw27"]
+content_margin_left = 16.0
+content_margin_top = 8.0
+content_margin_right = 16.0
+content_margin_bottom = 8.0
+bg_color = Color(0.22610152, 0.22610185, 0.23248771, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="FontFile" id="FontFile_kek77"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_imckf"]
 size = Vector2(50, 70)
@@ -109,6 +142,25 @@ size = Vector2(45, 54)
 
 [node name="Node2D" type="Node2D" unique_id=1070698194]
 position = Vector2(-336, -345)
+
+[node name="Timer" type="CanvasLayer" parent="." unique_id=1423199407]
+script = ExtResource("1_5vw27")
+
+[node name="TimerPanel" type="PanelContainer" parent="Timer" unique_id=641090407]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -64.0
+offset_top = 22.0
+offset_right = -24.0
+offset_bottom = 62.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5vw27")
+
+[node name="TimerLabel" type="Label" parent="Timer/TimerPanel" unique_id=1538125695]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontFile_kek77")
+theme_override_font_sizes/font_size = 32
 
 [node name="Background" type="Sprite2D" parent="." unique_id=1370640036]
 position = Vector2(931, 737)

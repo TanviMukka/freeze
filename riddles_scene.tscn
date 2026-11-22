@@ -28,4 +28,7 @@ offset_bottom = 282.0
 scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("4_couqm")
 
+[node name="InstructionsText" type="Sprite2D" parent="." unique_id=1389571709]
+
 [connection signal="pressed" from="ExitButton" to="ExitButton" method="_on_pressed"]
+[connection signal="pressed" from="InstructionsButton" to="ExitButton" method="_on_instructions_button_pressed"]
